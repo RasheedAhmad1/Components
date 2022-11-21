@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./SlideNav.css">
+        <title>Slide Menu</title>
+    </head>
+    <body> 
+        <div class="top-bar">
+            <button type="button" class="nav-btn">
+                <span class="material-icons">
+                    menu
+                </span>
+            </button>
+            <img src="" alt="codibble" class="logo">
+        </div>
+        <div class="nav-overlay"></div>
+        <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+            <a href="#" class="nav-link">Services</a>
+        </nav>
+
+        <!-- JavaScript Code -->
+        <script>
+            // Setup navigation bar
+            {
+                // reference to important navigation elements
+                const navMenu = document.querySelector('.nav');
+                const navOverlay = document.querySelector('.nav-overlay');
+                const navButton = document.querySelector('.nav-btn');
+
+                // apply CSS classes
+                navButton.addEventListener('click', () => {
+                    navMenu.classList.add('nav-open');
+                    navOverlay.classList.add('nav-overlay-open');
+                });
+
+                // remove CSS classes
+                navOverlay.addEventListener('click', () => {
+                    navMenu.classList.remove('nav-open');
+                    navOverlay.classList.remove('nav-overlay-open');
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --top-bar-height: 60px;
+    --nav-width: 300px;
+}
+
+body {
+    background-color: beige;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--top-bar-height);
+    background-color: brown;
+    display: flex;
+}
+
+.logo {
+    height: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.nav-btn {
+    width: var(--top-bar-height);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-btn > span {
+    color: white;
+    font-size: calc(var(--top-bar-height) / 2);
+}
+
+.nav {
+    height: 100vh;
+    width: var(--nav-width);
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(calc(-1 * var(--nav-width)));
+    transition: transform 0.05sec;
+}
+
+.nav-link {
+    display: block;
+    font-family: sans-serif;
+    font-size: 24px;
+    padding: 24px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-link:not(:last-child) {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-open {
+    transform: translateX(0);
+}
+
+.nav-overlay {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-overlay-open {
+    display: block;
+}
