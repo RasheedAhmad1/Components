@@ -1,3 +1,4 @@
+// Setup sticky navigation bar
 const body = document.body;
 let lastScroll = 0;
 
