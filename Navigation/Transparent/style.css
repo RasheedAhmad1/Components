@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --font-color: #fff;
+    --brnad-color: #bc85ee;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
 }
 
 .hero {
@@ -9,8 +22,8 @@
     height: 100vh;
     background-image: linear-gradient(rgba(42, 42, 43, 0.6), rgba(42, 42, 43, 0.6)),
                       url(../../Assets/images/bg-top-clear.jpg);
-    background-position: left-center;
     background-size: cover;
+    color: var(--font-color);
 }
 
 nav {
@@ -25,12 +38,10 @@ nav {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
-    text-decoration: none;
 }
 
 .logo span {
-    color: #dcbff6;
+    color: var(--brnad-color);
 }
 
 nav ul {
@@ -42,45 +53,43 @@ nav ul li {
     padding: 1rem;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
 nav ul li a:hover {
-    color:#dcbff6;
+    color: var(--brnad-color);
 }
 
 .active {
-    color: #dcbff6;
+    color: var(--brnad-color);
 }
 
 button {
-    padding: 10px 24px;
+    padding: 8px 20px;
+    margin-right: 0.2rem;
     border-radius: 1.8rem;
-    border: 2px solid #dcbff6;
+    border: 0.09375rem solid var(--brnad-color);
+    color: var(--font-color);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 .btn1 {
     background-color: transparent;
-    color: #dcbff6;
 }
 
 .btn2 {
-    background-color: #dcbff6;
-    color: white;
-    border-color: #dcbff6;
+    background-color: var(--brnad-color);
 }
 
 .hero-tag {
     width: 80%;
     margin: 120px auto;
-    color: white;
 }
 
 .hero-tag h1 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 12px;
 }
 
@@ -89,5 +98,10 @@ button {
 }
 
 .hero-tag span {
-    color: #dcbff6;
+    color: var(--brnad-color);
+}
+
+section {
+    width: 80%;
+    margin: 1rem auto;
 }
