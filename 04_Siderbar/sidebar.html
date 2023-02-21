@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./sidebar.css">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sidebar Menu</title>
+        <link rel="stylesheet" type="text/css" href="./sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="./search-style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- jQuery CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
                 integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" 
@@ -12,18 +15,27 @@
                 referrerpolicy="no-referrer">
         </script>
         <!-- CDN for menu icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
-              integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
-              crossorigin="anonymous" 
-              referrerpolicy="no-referrer" />
-        <title>Sidebar Menu</title>
+        <script src="https://kit.fontawesome.com/74cdb5813f.js" 
+                crossorigin="anonymous">
+        </script>
     </head>
     <body>
+        <!-- Search Box -->
+        <div class="search-box">
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search here..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <!-- Left Menu -->
         <aside class="side-menu">
             <ul class="accordion-menu">
                 <li>
                     <div class="dropdownlink">
-                        Extinguishers<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <!-- <i class="fa-solid fa-fire-extinguisher"></i>  -->
+                         Extinguishers 
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <ul class="submenuItems">
                         <li><a href="#">DCP Extinguishers</a></li>
@@ -35,7 +47,9 @@
                 </li>
                 <li>
                     <div class="dropdownlink">
-                        Hose Reels<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <!-- <i class="fa-solid fa-hose-reel"></i> -->
+                         Hose Reels 
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <ul class="submenuItems">
                         <li><a href="#">Fire Hose Reels</a></li>
@@ -44,7 +58,9 @@
                 </li>
                 <li>
                     <div class="dropdownlink">
-                        Hydrants<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <!-- <i class="fa-solid fa-fire-hydrant"></i>  -->
+                         Hydrants 
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <ul class="submenuItems">
                         <li><a href="#">Hydrants and Accessories</a></li>
@@ -53,7 +69,9 @@
                 </li>
                 <li>
                     <div class="dropdownlink">
-                        Brackets and Cabinets<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <!-- <i class="fa-solid fa-cabinet-filing"></i>  -->
+                         Brackets and Cabinets 
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <ul class="submenuItems">
                         <li><a href="#">Brackets</a></li>
@@ -62,7 +80,9 @@
                 </li>
                 <li>
                     <div class="dropdownlink">
-                        General Accessories<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <!-- <i class="fa-solid fa-solid fa-grid-2"></i>  -->
+                         General Accessories 
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <ul class="submenuItems">
                         <li><a href="#">Fire Blankets</a></li>

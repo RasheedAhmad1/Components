@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 ul {
     list-style: none;
 }
@@ -13,10 +20,9 @@ h2 {
 }
 
 .accordion-menu {
-    width: 100%;
-    max-width: 350px;
-    background: #fff;
-    border-radius: 4px;
+    width: 30%;
+    height: 100vh;
+    background: #f6f6f6;
 }
 
 .accordion-menu li.open .dropdownlink {
@@ -51,12 +57,12 @@ i {
 
 .submenuItems {
     display: none;
-    background: #f8cf9649;
+    background: #fee0b749;
     
 }
 
-li {
-    border-bottom: 1px solid #B6B6B6;
+li:not(:last-child) {
+    border-bottom: 1px solid #dcdada;
 }
 
 .submenuItems a {
@@ -64,4 +70,10 @@ li {
     color: #181818;
     padding: 12px 12px 12px 45px;
     transition: all 0.4s ease-out;
+}
+
+@media (max-width: 648px) {
+    .accordion-menu {
+        display: none;
+    }
 }
