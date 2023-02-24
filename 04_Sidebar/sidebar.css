@@ -20,12 +20,6 @@ a {
     background: #f6f6f6;
 }
 
-/* .accordion-menu {
-    width: 30%;
-    height: 100vh;
-    background: #f6f6f6;
-} */
-
 .accordion-menu li.open .dropdownlink {
     color: #f09a20;
 }
