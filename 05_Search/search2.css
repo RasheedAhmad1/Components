@@ -6,74 +6,7 @@
 }
 
 body {
-    background-color: rgb(18, 55, 85);
-}
-
-/* .search-box {
-    width: 25rem;
-    margin: 10rem auto 0;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.row input {
-    flex: 1;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    color: #333;
-}
-
-.row button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-
-.row button .fa-solid {
-    width: 20px;
-    color: rgb(88, 88, 88);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-::placeholder {
-    color: #555;
-}
-
-.search-box .result-box ul {
-    border-top: 1px solid #999;
-    padding: 15px 10px;
-}
-
-.search-box .result-box ul li {
-    list-style-type: none;
-    border-radius: 5px;
-    padding: 6px 10px;
-    cursor: pointer;
-}
-
-.search-box .result-box ul li:hover {
-    background-color: #d3d3d3;
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #6d7b98;
+  background-color: rgb(18, 55, 85);
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
