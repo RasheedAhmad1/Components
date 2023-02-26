@@ -50,3 +50,9 @@
 .search-box button:hover {
     background-color: rgb(4, 44, 78);
 }
+
+.fa-solid {
+    font-weight: 900;
+    font-size: 18px;
+    color: #bababa;
+}
