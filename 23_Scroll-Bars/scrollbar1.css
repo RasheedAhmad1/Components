@@ -1,0 +1,139 @@
+/* Basic Resents */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Root Variables */
+:root {
+    --ff-body: 'Heebo', sans-serif;
+    --ff-heading: 'Oswald', sans-serif;
+
+    --primary-color: hsl(60, 100%, 50%);
+    --neutral-color-900: hsl(0 0% 0%);
+    --nuutral-color-400: hsl(0 0% 100%);
+
+    --fs-xl: clamp(3rem, 1rem + 10vw, 10rem);
+    --fs-600: 2rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1.125rem;
+}
+
+/* body,
+p,
+h1,
+h2,
+h3,
+blockquote {
+    overflow-x: hidden;
+} */
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* Selecting all element excluding the first one. */
+/* .flow > *:not(:first-child) {
+    color: blue;
+} */
+/* OR */
+.flow > * + * {
+    margin-top: var(--flow-spacer, 1em);
+}
+
+body {
+    font-family: var(--ff-body);
+    line-height: 1.6;
+    font-size: var(--fs-400);
+}
+
+h1, blockquote {
+    font-family: var(--ff-heading);
+}
+
+h1 {
+    font-size: var(--fs-xl);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+blockquote {
+    font-size: var(--fs-600);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+article {
+    display: grid;
+}
+
+article > *:not(img) {
+    padding: 0 2rem;
+}
+
+.lead {
+    font-size: var(--fs-500);
+    max-width: 40ch;
+}
+.article-body {
+    columns: 2 30ch;
+    gap: 4rem;
+    max-width: 100ch;
+}
+
+/* Drop Cap */
+.article-body > p:first-child::first-letter {
+    font-size: 3rem;
+    font-weight: 700px;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(158, 55, 254);
+    border-radius: 10px;
+    /* margin top and bottom */
+    margin-block: .4em;
+    /* margin left and right */
+    /* margin-inline: 1em; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(102, 14, 184);
+    border: .15em solid rgb(158, 55, 254);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(71, 3, 134);
+}
+
+@media (min-width: 50em) {
+    article {
+        grid-template-columns: min(40%, 40rem) 1fr;
+    }
+    article > *:not(img) {
+        grid-column: 2 / -1;
+    }
+    article > img {
+        grid-row: 1 / 4;
+        height: 100%;
+        object-fit: cover;
+    }
+}
