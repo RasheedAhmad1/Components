@@ -1,0 +1,99 @@
+/* Basic Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Root Variables */
+:root {
+    --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+
+}
+
+body {
+    color: #333;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.container .btn1 {
+    margin-bottom: 40px;
+}
+
+/* Button with Icon */
+.iconic_button {
+    display: inline-flex;
+    height: 50px;
+    background-color: #009758;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.iconic_button:hover {
+    background-color: #008168;
+}
+
+.iconic_button:active {
+    background-color: #006E58;
+}
+
+.button_text, 
+.button_icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 12px;
+    color: #fff;
+    height: 100%;
+}
+
+.button_icon {
+    font-size: 1.5em;
+}
+
+/* Button with Gradient */
+/* Gradients are background images */
+.gradient-button {
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0.5em 1.5em;
+    font-size: 1rem;
+    color: #fff;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+}
+/* We cannot transition on 'background-image' (b/c its an image)
+So to gain transition effect - first we'll make the position high to
+shift the to overflow, then we'll make the position to right and 
+on hover we'll move it to the left, and after that we'll add the transition */
+.gradient-button:hover,
+.gradient-button:focus {
+    background-position: right;
+}
