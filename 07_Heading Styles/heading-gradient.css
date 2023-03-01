@@ -1,0 +1,44 @@
+/* Basic Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Root Variables */
+:root {
+    --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    background-image: var(--gradient);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
+
+    animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
