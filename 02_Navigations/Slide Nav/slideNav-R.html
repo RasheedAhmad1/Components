@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDN for menu icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+              integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+              crossorigin="anonymous" 
+              referrerpolicy="no-referrer" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="./slideNav-R.css" />
+        <title>Navigation</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <img src="../../Assets/images/logo.png" alt="Safety and Fire" width="300" height="90"/>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-link active">
+                            <label for="droplist1" class="toggle">
+                                Extinguishers <i class="fa-solid fa-angle-down"></i>
+                            </label>
+                        </a>
+                        <input type="checkbox" id="droplist1" />
+                        <ul class="sub">
+                            <li><a href="#">DCP Extinguishers</a></li>
+                            <li><a href="#">Co2 Extinguishers</a></li>
+                            <li><a href="#">Mobile Extinguishers</a></li>
+                            <li><a href="#">Co2 Extinguisher Spares & Accessories</a></li>
+                            <li><a href="#">DCP Extinguisher Spares & Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                            <label for="droplist2" class="toggle">
+                                Hose Reels <i class="fa-solid fa-angle-down"></i>
+                            </label>
+                        </a>
+                        <input type="checkbox" id="droplist2" />
+                        <ul class="sub">
+                            <li><a href="#">Fire Hose Reels</a></li>
+                            <li><a href="#">Fire Hose Reel Spares</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                            <label for="droplist3" class="toggle">
+                                Hydrants <i class="fa-solid fa-angle-down"></i>
+                            </label>
+                        </a>
+                        <input type="checkbox" id="droplist3" />
+                        <ul class="sub">
+                            <li><a href="#">Hydrants and Accessories</a></li>
+                            <li><a href="#">Layflats Hose, Nozzles and Couplings</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                            <label for="droplist4" class="toggle">
+                                Brackets and Cabinets <i class="fa-solid fa-angle-down"></i>
+                            </label>
+                        </a>
+                        <input type="checkbox" id="droplist4" />
+                        <ul class="sub">
+                            <li><a href="#">Brackets</a></li>
+                            <li><a href="#">Cabinets and Covers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                            <label for="droplist5" class="toggle">
+                                General Accessories <i class="fa-solid fa-angle-down"></i>
+                            </label>
+                        </a>
+                        <input type="checkbox" id="droplist5" />
+                        <ul class="sub">
+                            <li><a href="#">Fire Blankets</a></li>
+                            <li><a href="#">Ring Gauges and General Accessories</a></li>
+                            <li><a href="#">Alarm Station</a></li>
+                            <li><a href="#">Dry Chemical Powder</a></li>
+                            <li><a href="#">Signs and Labels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Body / Main Content -->
+        <main class="content">
+            <!-- Navbar Button -->
+            <div class="hamburger-container">
+                <div class="menu-toggle">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body Content -->
+            <!-- <section>
+                <h1>Sliding In/Out Responsive Navigation</h1>
+                <p>node js is not a framework, its only a runtime environment to run JavaScript on server-side. 
+                Node. js, as a package, contains an interpreter and a compiler. It just steals these from V8. 
+                Environment to run JavaScript on server-side. Node. js, as a package, contains an interpreter 
+                and a compiler. It just steals these from V8.</p>
+                <p>Environment to run JavaScript on server-side. Node. js, as a package, contains an interpreter 
+                and a compiler. It just steals these from V8.node js is not a framework, its only a runtime 
+                environment to run JavaScript on server-side. Node. js, as a package, contains an interpreter 
+                and a compiler. It just steals these from V8.</p>
+                <p>node js is not a framework, its only a runtime environment to run JavaScript on server-side. 
+                Node. js, as a package, Environment to run JavaScript on server-side. Node. js, as a package, 
+                contains an interpreter and a compiler. It just steals these from V8.contains an interpreter 
+                and a compiler. It just steals these from V8.</p>
+                <h2>Sub heading first</h2>
+                <p>node js is not a framework, its only a runtime environment to run JavaScript on server-side. 
+                Node. js, as a package, contains an interpreter and a compiler. Environment to run JavaScript on 
+                server-side. Node. js, as a package, contains an interpreter and a compiler. It just steals these 
+                from V8.It just steals these from V8.</p>
+                <p>node js is not a framework, its only a runtime environment to run Environment to run JavaScript 
+                on server-side. Node. js, as a package, contains an interpreter and a compiler. It just steals 
+                these from V8.JavaScript on server-side. Node. js, as a package, contains an interpreter and a 
+                compiler. It just steals these from V8.</p>
+                <p>node js is not a framework, its only a runtime environment to run JavaScript on server-side. 
+                Node. js, as a package, contains an interpreter and a compiler. It just steals these from V8.</p>
+                <p>node js is not a framework, its only a runtime environment to run JavaScript on server-side. 
+                Node. js, as a package, Environment to run JavaScript on server-side. Node. js, as a package, 
+                contains an interpreter and a compiler. It just steals these from V8.contains an interpreter 
+                and a compiler. It just steals these from V8.</p>
+                <h2>Another subheading</h2>
+                <p>node js is not a framework, its only a runtime environment to run JavaScript on server-side. 
+                Node. js, as a package, contains an interpreter and a compiler. Environment to run JavaScript on 
+                server-side. Node. js, as a package, contains an interpreter and a compiler. It just steals these 
+                from V8.It just steals these from V8.</p>
+                <p>node js is not a framework, its only a runtime environment to run JavaScript on server-side. 
+                Node. js, as a package, contains an interpreter and a compiler. It just steals these from V8.</p>
+                <p>Environment to run JavaScript on server-side. Node. js, as a package, contains an interpreter 
+                and a compiler. It just steals these from V8.node js is not a framework, its only a runtime 
+                environment to run JavaScript on server-side. Node. js, as a package, contains an interpreter 
+                and a compiler. It just steals these from V8.</p>
+            </section> -->
+        </main>
+
+        <!-- JavaScript Code -->
+        <script src="./slideNav-R.js"></script>
+    </body>
+</html>
