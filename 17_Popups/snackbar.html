@@ -48,9 +48,24 @@
 </head>
 <body>
 
-<h2>Snackbar / Toast</h2>
-<p>Snackbars are often used as a tooltips/popups to show a message at the bottom of the screen.</p>
+<h1>Snackbar and Toast</h1>
+<h2>Snackbar</h2>
+<p>Snackbars are often used as a tooltips/popups to show a message at the bottom of the screen. <br /> Snackbars contain a single line of text directly related to the operation performed. They may contain a text action, but no icons.</p>
+<p>A Snackbar is similar to a Toast, but is more versatile in that it is interactive — like offering that undo your user is still searching for. A Snackbar animates upward from the bottom of the screen and the user can swipe it away — or not. If they do nothing, it will time out on its own and automatically disappear (like a Toast!).</p>
+<p>Usage
+  Only one snackbar may be displayed at a time. Each snackbar may contain a single action, neither of which may be “Dismiss” or “Cancel.”
+  
+  Behavior
+  Snackbars animate upwards from the bottom edge of the screen.
+  
+  Snackbar specs
+  Action button: Roboto Medium 14sp, all-caps text
+  Mobile height: 48dp (single-line), 80dp (multi-line)
+  Desktop snackbar height: 48dp</p>
+<h2>Toast</h2>
+<p>Toasts are primarily used for system messaging. They also display at the bottom of the screen, but may not be swiped off-screen.</p>
 <p>Click on the button to show the snackbar. It will disappear after 3 seconds.</p>
+<p>When what you are really trying to do is just give the user a heads-up, a Dialog is clearly overkill. This is probably a situation better suited to a Toast. Toasts are a great way for you to confirm that that thing the user was doing really did happen. Because a toast is a widget developers can pass a short string to, which appears and disappears entirely on its own.</p>
 
 <button onclick="myFunction()">Show Snackbar</button>
 
