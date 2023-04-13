@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(0,0)">
+      <rect width="40%" height="30%" fill="red" />
+      <circle cx="150" cy="100" r="80" fill="green" />
+      <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+    </g>
+
+    <g transform="translate(0,200)">
+      <path
+      d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"
+      fill="none"
+      stroke="#444"
+      stroke-width="1" />
+    </g>
+
+    <g transform="translate(0,300)">
+      <path
+        d="M 10,30
+        A 20,20 0,0,1 50,30
+        A 20,20 0,0,1 90,30
+        Q 90,60 50,90
+        Q 10,60 10,30 z" />
+    </g>
+
+    <g transform="translate(0,400)">
+      <polygon 
+        points="0,0 100,0 50,50"
+        fill="#236666" />
+    </g>
+
+    <g transform="translate(0,500)">
+      <circle cx="50" cy="50" r="40" />
+      <circle cx="150" cy="50" r="20" />
+    </g>
+</svg>
