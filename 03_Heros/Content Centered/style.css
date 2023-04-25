@@ -21,7 +21,7 @@ a {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(42, 42, 43, 0.6), rgba(42, 42, 43, 0.6)),
-                      url(../../Assets/images/bg-top-clear.jpg);
+                      url(../../_Assets/images/bg-top-clear.jpg);
     background-size: cover;
     color: var(--font-color);
 }
@@ -89,7 +89,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
 }
 
 .hero-content h1 {
@@ -99,9 +98,8 @@ button:hover {
 
 .hero-content p {
     font-size: 18px;
-    /* Justify */
 }
 
-.hero-tag span {
+.hero-content span {
     color: var(--brnad-color);
 }
