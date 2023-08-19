@@ -3,9 +3,10 @@
 {
     // reference to important navigation elements
     const activePage = window.location.pathname;
-    const navLinks = document.querySelectorAll('nav a').
+    console.log(activePage);
+    document.querySelectorAll('.nav-links li a').
     forEach(link => {
-        // apply CSS class
+        // apply CSS class (active)
         if(link.href.includes(`${activePage}`)) {
             link.classList.add('active');
         }
