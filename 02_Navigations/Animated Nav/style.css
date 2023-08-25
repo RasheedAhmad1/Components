@@ -37,8 +37,12 @@
     color: ghostwhite;
 }
 
-.nav-link {
+.menu {
     display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
     padding: 0.2rem 0;
 }
 
