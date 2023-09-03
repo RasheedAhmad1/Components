@@ -1,0 +1,176 @@
+/* ======== Google Fonts ======== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,500&display=swap');
+
+/* ---------------------- */
+/*     CSS Variables      */
+/* ---------------------- */
+:root {
+    /* ======== colors ======== */
+    /* color mode HSL (Hue, Saturation, Lightness) */
+    --clr-dark: hsl(220 24% 12%);
+    --clr-dark-light: hsl(220 24% 15%);
+    --clr-dark-lighten: hsl(220 24% 18%);
+    --clr-white: #fff;
+    --clr-light: hsl(220, 100%, 97%);
+    
+    /* ======== Typography ======== */
+    /* Font Size */
+    /* 1rem = 16px & .5rem = 8px */
+    --body-copy: 1.2rem;
+
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* Font Family */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+
+    /* Font Weight */
+    --font-regular: 400;
+    --font-semi-bold: 500;
+    --font-bold: 600;
+
+    /* ======== z-index ======== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /* ======== height ======== */
+    --header-height: 3.5rem;
+}
+
+
+/* ---------------------- */
+/*      Base Resets       */
+/* ---------------------- */
+/* ==== Remove default margins & paddings ==== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==== Remove list style ==== */
+ul {
+    list-style: none;
+}
+
+/* ==== Remove link decoration ==== */
+a {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+/* ------------------- */
+/*     Compontents     */
+/* ------------------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-dark);
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
+    z-index: var(--z-fixed);
+}
+
+.navigation {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-logo,
+.nav-close,
+.nav-burger {
+    color: var(--clr-white);
+}
+
+.nav-data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    font-weight: var(--font-bold);
+}
+
+.nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.nav-colse,
+.nav-burger {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0; /* top right bottom left */
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+}
+
+.nav-close {
+    opacity: 0;
+}
+
+/* ------------------- */
+/*   Responsive Nav    */
+/* ------------------- */
+@media screen and (max-width: 1118px) {
+    .nav-menu {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        width: 100%;
+        /* height: calc(100vh - header-height); */
+        overflow: auto;
+        pointer-events: none;
+        opacity: 0;
+        transition: top .4s, opacity .3s;
+    }
+    .nav-menu::-webkit-scrollbar {
+        width: 0;
+    }
+    .nav-links {
+        background-color: var(--clr-dark);
+        padding-top: 1rem;
+    }
+}
+
+.nav-link {
+    color: var(--clr-white);
+    padding: 1rem 2.5rem;
+    background-color: var(--clr-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+}
+
+.nav-link:hover {
+    background-color: var(--clr-dark-light);
+}
+
+/* Show Menu */
+.show-menu {
+    opacity: 1;
+    top: 3.5rem;
+    pointer-events: initial;
+}
