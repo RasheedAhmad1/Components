@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Shadow Generator</title>
+        <link rel="stylesheet" href="./box-shadow-generator.css" />
+    </head>
+    <body>
+        <div class="box">
+            <label>Offset X</label>
+            <input class="offset-x" type="range" min="0" max="100" value="2">
+            <label>Offset Y</label>
+            <input class="offset-y" type="range" min="0" max="100" value="2">
+            <label>Blur Radius</label>
+            <input class="blur-radius" type="range" min="0" max="100" value="2">
+            <label>Blur Spread</label>
+            <input class="blur-spread" type="range" min="0" max="100" value="2">
+            <label>Color</label>
+            <input class="color" type="color" value="#000000">
+            <input type="text" class="css-value" onclick="this.select()" readonly>
+        </div>
+    </body>
+
+    <!-- JS -->
+    <script src="./box-shadow-generator.js"></script>
+</html>
