@@ -1,0 +1,50 @@
+/* ---------------------- */
+/*     CSS Variables      */
+/* ---------------------- */
+:root {
+    --clr-light: 231 77% 90%;
+    --clr-dark: 230 35% 7%;
+    --clr-primary: 220 34% 89%;
+    --clr-secondary: 230 45% 54%;
+    --clr-accent: 0 0% 10%;
+
+    --foreground: var(---clr-dark);
+    --background: var(--clr-light);
+    
+    --ff-body: "Assistant", sans-serif;
+    --ff-title: "Playfair Display", serif;
+}
+
+/* ---------------------- */
+/*   Dark Mode Variables  */
+/* ---------------------- */
+.darkmode {
+    --clr-light: 231 77% 90%;
+    --clr-dark: 230 35% 7%;
+    --clr-primary: 220 34% 89%;
+    --clr-secondary: 230 45% 54%;
+    --clr-accent: 0 0% 10%;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+/* ---------------------- */
+/*      Base Resets       */
+/* ---------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: var(--clr-white);
+    background-color: var(--clr-dark);
+    line-height: 1.5;
+    min-height: 100vh;
+}
