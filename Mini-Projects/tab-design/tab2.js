@@ -15,27 +15,34 @@ tabButtons.forEach((tab, index) => {
 });
 
 tabsContainer.addEventListener("click", (e) => {
+    // print whatever clicked
+    // console.log(e.target);
+
     // grab the link
     const clickedTab = e.target.closest("a");
-    // if the link is'nt clicked, do nothing
-    if (!clickedTab) return;
-
     // console.log(clickedTab);
+    
+    // if the link is'nt clicked, do nothing, the browser skips the JS here
+    if (!clickedTab) return;
+    // console.log(clickedTab);
+
 
     e.preventDefault();
 
-    // switchTab(clickedTab);
+    switchTab(clickedTab);
 });
 
 // tabsList.setAttribute("role", "tablist");
 
-// function switchTab(newTab) {
-//     const activePanelId = clickedTab.getAttribute("href");
-//     const activePanel = tabsContainer.querySelector(activePanelId);
+function switchTab(newTab) {
+    // get the href attribute value
+    const activePanelId = newTab.getAttribute("href");
+    // get the active tab
+    const activePanel = tabsContainer.querySelector(activePanelId);
 
-//     // loop through the panels
-//     tabPanels.forEach((panel) => {
-//         panel.setAttribute("hidden", true);
-//     });
-//     activePanel.removeAttribute("hidden", false);
-// }
+    // loop through the panels
+    tabPanels.forEach((panel) => {
+        panel.setAttribute("hidden", true);
+    });
+    activePanel.removeAttribute("hidden");
+}
