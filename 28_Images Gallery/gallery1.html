@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./gallery1.css">
+        <title>Gallery Design 1</title>
+    </head>
+    <body>
+        <div class="container">
+            <img src="../_Assets/images/logo-light.png" id="leftBtn">
+            <div class="gallery" id="gallery">
+                <div class="gallery-item">
+                    <span><img src="../_Assets/images/bg.jpg"></span>
+                    <span><img src="../_Assets/images/bg.jpg"></span>
+                    <span><img src="../_Assets/images/bg.jpg"></span>
+                </div>
+                <div class="gallery-item">
+                    <span><img src="../_Assets/images/bg.jpg"></span>
+                    <span><img src="../_Assets/images/bg.jpg"></span>
+                    <span><img src="../_Assets/images/bg.jpg"></span>
+                </div>
+            </div>
+            <img src="../_Assets/images/logo-light.png" id="rightBtn">
+        </div>
+    </body>
+
+    <!-- JavaScript -->
+    <script>
+        let galleryScroll = document.getElementById('gallery');
+        let leftBtn = document.getElementById('leftBtn');
+        let rightBtn = document.getElementById('rightBtn');
+
+        galleryScroll.addEventListener('wheel', (e) => {
+            e.preventDefault();
+
+            console.log(e.deltaY);
+            galleryScroll.scrollLeft += e.deltaY;
+        });
+
+        rightBtn.addEventListener('click', () => {
+            galleryScroll.scrollLeft += 900;
+        });
+
+        leftBtn.addEventListener('click', () => {
+            galleryScroll.scrollLeft -= 900;
+        });
+
+    </script>
+</html>
