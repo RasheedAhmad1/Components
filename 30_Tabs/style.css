@@ -1,0 +1,54 @@
+/* ======== Google Fonts ======== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,500&display=swap');
+
+
+/* ---------------------- */
+/*      Base Resets       */
+/* ---------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    column-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    list-style-type: none;
+
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 1rem;
+}
+
+.tab {
+    padding: .8rem 1.4rem;
+}
+
+.tab.active {
+    background-color: #f1ebeb;
+}
+
+.tab:hover {
+    background-color: rgb(185, 197, 207);
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
