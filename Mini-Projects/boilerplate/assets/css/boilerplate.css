@@ -18,11 +18,13 @@
     
     /* ======== Typography ======== */
     /* Font Family */
+    --ff-base: 'Outfit', sans-serif;
+
     --ff-body: "Assistant", sans-serif;
     --ff-title: "Playfair Display", serif;
 
     /* Font Size */
-    /* .5rem = 8px & 1rem = 16px */
+    /* Scale - 1rem = 16px */
     --body-copy: 1.2rem;
 
     --fs-900: 9.375rem;
@@ -34,10 +36,25 @@
     --fs-300: 1rem;
     --fs-200: 0.875rem;
 
+    /* OR Font size */
+    --text: 1rem;
+    --text-sm: .8rem;
+    --text-md: 1.2rem;
+    --text-lg: 1.4rem;
+    --text-xl: 1.6rem;
+
     /* Font Weight */
     --font-regular: 400;
     --font-semi-bold: 500;
     --font-bold: 600;
+
+    /* Headings */
+    --h1: 2rem;
+    --h2: 1.8rem;
+    --h3: 1.6rem;
+    --h4: 1.4rem;
+    --h5: 1.2rem;
+    --h6: 1rem;
 
     /* ======== z-index ======== */
     --z-tooltip: 10;
