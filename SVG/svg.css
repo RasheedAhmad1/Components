@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttons {
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 5rem;
+}
+
+button {
+    background-color: transparent;
+    border: 4px solid var(--button-color, #000);
+    border-radius: 8px;
+}
+
+.button-one {
+    --button-color: blue;
+}
+
+.button-one .line {
+    transition: 1s;
+    transform-origin: center;
+}
+
+.button-one:hover :is(.top-bar, .bottom-bar) { /* can use :is and :where */
+    y: 47;
+}
+
+.button-one:hover .top-bar {
+    rotate: 45deg;
+}
+
+.button-one:hover .middle-bar {
+    opacity: 0;
+}
+
+.button-one:hover .bottom-bar {
+    rotate: -45deg;
+}
