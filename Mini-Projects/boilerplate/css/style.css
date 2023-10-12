@@ -7,26 +7,28 @@
 :root {
     /* ======== colors ======== */
     /* color mode HSL (Hue, Saturation, Lightness) */
-    --clr-light: 231 77% 90%;
-    --clr-dark: 230 35% 7%;
-    --clr-primary: 220 34% 89%;
-    --clr-secondary: 230 45% 54%;
-    --clr-accent: 0 0% 10%;
-
-    --foreground: var(---clr-dark);
-    --background: var(--clr-light);
+    --clr-primary-400: hsla(220, 34%, 89%, 0.3);
+    --clr-primary-100: hsla(220, 34%, 89%, 1);
+    --clr-primary-200: hsla(220, 34%, 89%, 1);
+    --clr-primary-600: hsla(220, 34%, 89%, 1);
+    --clr-primary-800: hsla(220, 34%, 89%, 1);
+    --clr-secondary-400: hsla(230, 45%, 54%, 1);
+    --clr-accent-400: hsla(0, 0%, 10%, 1);
+    --clr-neutral-100: hsla(0, 0%, 100%, 1);
     
     /* ======== Typography ======== */
     /* Font Family */
     --ff-base: 'Outfit', sans-serif;
-
-    --ff-body: "Assistant", sans-serif;
     --ff-title: "Playfair Display", serif;
+
+    /* Font Weight */
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 600;
 
     /* Font Size */
     /* Scale - 1rem = 16px */
     --body-copy: 1.2rem;
-
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;
     --fs-700: 3.5rem;
@@ -42,11 +44,6 @@
     --text-md: 1.2rem;
     --text-lg: 1.4rem;
     --text-xl: 1.6rem;
-
-    /* Font Weight */
-    --font-regular: 400;
-    --font-semi-bold: 500;
-    --font-bold: 600;
 
     /* Headings */
     --h1: 2rem;
@@ -77,14 +74,14 @@
 /*   Dark Mode Variables  */
 /* ---------------------- */
 .darkmode {
-    --clr-light: 231 77% 90%;
+    /* --clr-light: 231 77% 90%;
     --clr-dark: 230 35% 7%;
     --clr-primary: 220 34% 89%;
     --clr-secondary: 230 45% 54%;
     --clr-accent: 0 0% 10%;
 
     --foreground: var(--clr-light);
-    --background: var(--clr-dark);
+    --background: var(--clr-dark); */
 }
 
 /* ---------------------- */
@@ -105,12 +102,11 @@ html {
 }
 
 body {
-    font-family: var(--ff-body);
+    font-family: var(--ff-base);
     font-size: var(--fs-400);
-    color: var(--clr-white);
-    background-color: var(--clr-dark);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-regular);
     line-height: 1.5; /* 1.4 default */
-    min-height: 100vh;
 }
 
 p {
