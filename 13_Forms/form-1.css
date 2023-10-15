@@ -1,0 +1,60 @@
+:root {
+    --clr-primary: rgb(57, 136, 215);
+    --clr-primary-dark: rgb(23, 92, 161);
+    --clr-secondary: rgb(23, 37, 43);
+    --clr-error: rgb(227, 86, 86);
+    --clr-success: rgb(93, 240, 137);
+    --clr-warning: rgb(240, 213, 93);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: rgb(180, 180, 180);
+    border-radius: 12px;
+}
+
+.container,
+.form__input,
+.form__button {
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message-error {
+    color: var(--clr-error);
+}
+
+.form__message-success {
+    color: var(--clr-success);
+}
