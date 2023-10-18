@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modal Design 1</title>
+        <link rel="stylesheet" href="modal-1.css">
+    </head>
+    <body>
+        <button class="Btn" id="modalBtn">Open Modal</button>
+        <div class="modal" id="simpleModal">
+            <div class="modal-content">
+                <p>Hello, I'm a modal...</p>
+                <span class="closeBtn">&times;</span>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./modal-1.js"></script>
+        <script>
+            function numberWithCommas(x) {
+                x = x.toString();
+                var pattern = /(-?\d+)(\d{3})/;
+                while (pattern.test(x))
+                    x = x.replace(pattern, "$1,$2");
+                return x;
+            }
+
+            console.log(numberWithCommas(1000000));
+        </script>
+        <script>
+            function numberWithCommasPrint(x) {
+                var parts = x.toString().split(".");
+                console.log(parts);
+                parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                return parts.join(".");
+            }
+            console.log(numberWithCommasPrint(1000000));
+        </script>
+    </body>
+</html>
